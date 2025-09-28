@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keyword" content="Call of Duty,Action Game">
+  <meta name="description" content="This website is about Call of Duty">
+  <meta name="author" content="Devansh">
+  <title>Call of Duty Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    var sub = false;
+  </script>
+</head>
+
+<iframe  id="end" name="end" class="hidden" onload="if(sub){window.location.href='END.html';}"></iframe>
+
+<body class="min-h-screen bg-cover bg-center flex items-center justify-center"
+  style="background-image: url('download .jpg');">
+
+  <div class="bg-black bg-opacity-70 p-8 rounded-xl shadow-2xl w-full max-w-lg border-2 border-gray-600">
+    <h1 class="text-4xl text-yellow-400 text-center mb-6 tracking-widest">CALL OF DUTY SURVEY</h1>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdGltwLqRW0UvjmRNbR2gnd6gtqp6d3zZJExmbseoLwf1KIyw/formResponse" method="POST" class="space-y-5" target="end" onsubmit="sub=true">
+
+      <!-- NAME -->
+      <div>
+        <label for="NAME" class="block text-gray-300 text-lg">NAME</label>
+        <input type="text" id="NAME" name="entry.1184746538"
+          class="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-500 focus:ring-2 focus:ring-yellow-400">
+      </div>
+
+      <!-- PHONE -->
+      <div>
+        <label for="PHONE NO." class="block text-gray-300 text-lg">PHONE NO.</label>
+        <input type="tel" id="PHONE NO." name="entry.512908111"
+          class="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-500 focus:ring-2 focus:ring-yellow-400">
+      </div>
+
+      <!-- EMAIL -->
+      <div>
+        <label for="EMAIL ID" class="block text-gray-300 text-lg">EMAIL ID</label>
+        <input type="email" id="EMAIL ID" name="entry.639401181"
+          class="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-500 focus:ring-2 focus:ring-yellow-400">
+      </div>
+
+      <!-- ADDRESS -->
+      <div>
+        <label for="ADDRESS" class="block text-gray-300 text-lg">ADDRESS</label>
+        <input type="text" id="ADDRESS" name="entry.1167703534"
+          class="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-500 focus:ring-2 focus:ring-yellow-400">
+      </div>
+
+      <!-- BRAND -->
+      <div>
+        <h4 class="text-gray-300 text-xl mb-2">BRAND</h4>
+        <div class="flex flex-wrap gap-4 text-white">
+          <label><input type="checkbox" name="entry.1284923408"  value="VIVO" class="mr-2">VIVO</label>
+          <label><input type="checkbox" name="entry.1284923408"  value="POCO" class="mr-2">POCO</label>
+          <label><input type="checkbox" name="entry.1284923408"  value="REALME" class="mr-2">REALME</label>
+          <label><input type="checkbox" name="entry.1284923408"  value="REDMI" class="mr-2">REDMI</label>
+        </div>
+      </div>
+
+      <!-- FEEDBACK -->
+      <div>
+        <label for="FEEDBACK" class="block text-gray-300 text-lg">FEEDBACK</label>
+        <textarea id="FEEDBACK" name="entry.1718177098"
+          class="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-500 h-28 focus:ring-2 focus:ring-yellow-400"></textarea>
+      </div>
+
+      <!-- SUBMIT -->
+      <div class="text-center">
+        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-black text-lg px-8 py-3 rounded-md shadow-lg transition-all">
+          SUBMIT
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
